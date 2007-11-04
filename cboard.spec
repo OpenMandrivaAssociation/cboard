@@ -1,4 +1,4 @@
-%define version 0.2.4
+%define version 0.5
 %define release %mkrel 1
 
 Summary:	Console frontend of gnuchess
@@ -10,7 +10,7 @@ Group:		Games/Boards
 URL:		http://arbornet.org/~bjk/cboard/
 Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
-Source:		%{name}-%{version}.tar.bz2
+Source:		%{name}-%{version}.tar.gz
 
 BuildRequires:	ncurses-devel
 Requires:	gnuchess
