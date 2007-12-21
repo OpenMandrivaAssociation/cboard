@@ -8,6 +8,7 @@ Release:	%{release}
 License:	GPL
 Group:		Games/Boards
 URL:		http://arbornet.org/~bjk/cboard/
+Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 Source:		%{name}-%{version}.tar.gz
 
