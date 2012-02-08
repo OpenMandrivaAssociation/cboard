@@ -1,17 +1,12 @@
-%define version 0.5
-%define release %mkrel 5
-
-Summary:	Console frontend of gnuchess
 Name:		cboard
-Version:	%{version}
-Release:	%{release}
-License:	GPL
+Version:	0.6
+Release:	%mkrel 1
+Summary:	Console frontend of gnuchess
+License:	GPLv2
 Group:		Games/Boards
-URL:		http://arbornet.org/~bjk/cboard/
-Buildroot:	%{_tmppath}/%{name}-%{version}-buildroot
-
-Source:		%{name}-%{version}.tar.gz
-
+URL:		http://benkibbey.wordpress.com/cboard/
+Source0:	http://downloads.sourceforge.net/c-board/%{name}-%{version}.tar.bz2
+Patch0:		cboard-0.6-mode.patch
 BuildRequires:	ncurses-devel
 Requires:	gnuchess
 
@@ -21,17 +16,18 @@ the interface. It can edit PGN tags, annotate moves with NAG, and more.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %configure2_5x --bindir=%{_gamesbindir} --datadir=%{_gamesdatadir}
 %make
 
 %install
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
 
 %files
 %defattr(-, root, root)
