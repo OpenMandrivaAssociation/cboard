@@ -1,0 +1,13 @@
+Index: libchess/pgn.c
+===================================================================
+--- libchess/pgn.c
++++ libchess/pgn.c	2011-05-08 11:08:23.023767053 +0200
+@@ -2140,7 +2140,7 @@
+ 		if (tmpnam(tmp) == NULL)
+ 		    goto fail;
+ 
+-		if ((fd = open(tmp, O_RDWR|O_EXCL|O_CREAT)) == -1)
++		if ((fd = open(tmp, O_RDWR|O_EXCL|O_CREAT, S_IRUSR|S_IWUSR)) == -1)
+ 		    goto fail;
+ 
+ 		if ((tfp = fdopen(fd, "a+")) == NULL)
