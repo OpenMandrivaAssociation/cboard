@@ -1,11 +1,11 @@
 Name:		cboard
-Version:	0.6.1
+Version:	0.7.0
 Release:	1
 Summary:	Console frontend of gnuchess
 License:	GPLv2
 Group:		Games/Boards
 URL:		http://benkibbey.wordpress.com/cboard/
-Source0:	http://sourceforge.net/projects/c-board/files/0.6.1/%{name}-%{version}.tar.bz2
+Source0:	http://sourceforge.net/projects/c-board/files/0.7.0/%{name}-%{version}.tar.bz2
 Patch0:		cboard-0.6-mode.patch
 BuildRequires:	ncurses-devel
 Requires:	gnuchess
@@ -90,5 +90,6 @@ Import cboard
 * Fri Sep 19 2003 Abel Cheung <maddog@linux.org.hk> 0.1.6-1mdk
 - First Mandrake package
 - Patch0: Fix compilation with newest gcc
+
 
 
