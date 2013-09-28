@@ -34,6 +34,7 @@ the interface. It can edit PGN tags, annotate moves with NAG, and more.
 %{_gamesbindir}/*
 %{_gamesdatadir}/%{name}
 %{_mandir}/man?/*
+%{_datadir}/locale/es/LC_MESSAGES/cboard.mo
 
 
 
