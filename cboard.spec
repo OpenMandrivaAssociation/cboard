@@ -23,18 +23,14 @@ the interface. It can edit PGN tags, annotate moves with NAG, and more.
 %make
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-%__rm -rf %{buildroot}
+%find_lang %{name}
 
-%files
-%defattr(-, root, root)
+%files -f %{name}.lang
 %{_gamesbindir}/*
 %{_gamesdatadir}/%{name}
 %{_mandir}/man?/*
-%{_datadir}/locale/es/LC_MESSAGES/cboard.mo
 
 
 
