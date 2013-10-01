@@ -1,11 +1,11 @@
 Name:		cboard
-Version:	0.6.1
+Version:	0.7.0
 Release:	1
 Summary:	Console frontend of gnuchess
 License:	GPLv2
 Group:		Games/Boards
 URL:		http://benkibbey.wordpress.com/cboard/
-Source0:	http://sourceforge.net/projects/c-board/files/0.6.1/%{name}-%{version}.tar.bz2
+Source0:	http://sourceforge.net/projects/c-board/files/0.7.0/%{name}-%{version}.tar.bz2
 Patch0:		cboard-0.6-mode.patch
 BuildRequires:	ncurses-devel
 Requires:	gnuchess
@@ -23,14 +23,11 @@ the interface. It can edit PGN tags, annotate moves with NAG, and more.
 %make
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-%__rm -rf %{buildroot}
+%find_lang %{name}
 
-%files
-%defattr(-, root, root)
+%files -f %{name}.lang
 %{_gamesbindir}/*
 %{_gamesdatadir}/%{name}
 %{_mandir}/man?/*
@@ -92,3 +89,7 @@ Import cboard
 - Patch0: Fix compilation with newest gcc
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> auto_update
