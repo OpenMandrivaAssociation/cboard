@@ -7,7 +7,7 @@ Group:		Games/Boards
 URL:		http://benkibbey.wordpress.com/cboard/
 Source0:	http://sourceforge.net/projects/c-board/files/0.7.0/%{name}-%{version}.tar.bz2
 Patch0:		cboard-0.6-mode.patch
-BuildRequires:	ncurses-devel
+BuildRequires:	pkgconfig(ncursesw)
 Requires:	gnuchess
 
 %description
