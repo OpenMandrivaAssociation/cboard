@@ -1,5 +1,6 @@
 removed_sources:
   cboard-0.6.1.tar.bz2: 2caef49376d23bbc38e58a12c280040bc7345f4a
   cboard-0.6.tar.bz2: 18a8ff89d491695fb368f44bb4791e7defb365a8
-sources:
   cboard-0.7.0.tar.bz2: 5699cc60f0f66b35582ed8a16071c29d1a5f2159
+sources:
+  cboard-0.7.1.tar.bz2: d0fe491685de4a2a084802ec2fe94d6b570939f3

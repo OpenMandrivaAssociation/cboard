@@ -1,13 +1,13 @@
 Name:		cboard
-Version:	0.7.0
+Version:	0.7.1
 Release:	1
 Summary:	Console frontend of gnuchess
 License:	GPLv2
 Group:		Games/Boards
 URL:		http://benkibbey.wordpress.com/cboard/
-Source0:	http://sourceforge.net/projects/c-board/files/0.7.0/%{name}-%{version}.tar.bz2
+Source0:	http://sourceforge.net/projects/c-board/files/0.7.1/%{name}-%{version}.tar.bz2
 Patch0:		cboard-0.6-mode.patch
-BuildRequires:	ncurses-devel
+BuildRequires:	pkgconfig(ncursesw)
 Requires:	gnuchess
 
 %description
@@ -89,4 +89,8 @@ Import cboard
 - Patch0: Fix compilation with newest gcc
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> auto_update
 
