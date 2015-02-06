@@ -1,6 +1,6 @@
 Name:		cboard
 Version:	0.7.1
-Release:	1
+Release:	2
 Summary:	Console frontend of gnuchess
 License:	GPLv2
 Group:		Games/Boards
