@@ -4,7 +4,7 @@ Release:	2
 Summary:	Console frontend of gnuchess
 License:	GPLv2
 Group:		Games/Boards
-URL:		http://benkibbey.wordpress.com/cboard/
+URL:		https://benkibbey.wordpress.com/cboard/
 Source0:	http://sourceforge.net/projects/c-board/files/0.7.1/%{name}-%{version}.tar.bz2
 Patch0:		cboard-0.6-mode.patch
 BuildRequires:	pkgconfig(ncursesw)
